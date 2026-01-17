@@ -1,3 +1,4 @@
+let button = document.getElementById("convert");
 function convertCurrency() {
   let rands = prompt("Enter amount in Rands(ZAR) to convert");
   rands = Number(rands);
@@ -58,3 +59,4 @@ function convertCurrency() {
       );
   }
 }
+//button.addEventListener("click", convertCurrency());... you only need to specify event once and this called the function immediately so i placed an onclick event listener directly on the button in html
