@@ -15,19 +15,12 @@ function convertCurrency() {
 
   //NOTE: the conversion values below are placeholders and do not reflect the economic market in real life
   let naira = rands * 2000;
-  //naira = naira.concat(foreignCurrency);
   let euros = rands / 7;
-  //euros = euros.concat(foreignCurrency);
   let usDollars = rands / 12;
-  //usDollars = usDollars.concat(foreignCurrency);
   let rupees = rands * 34;
-  //rupees = rupees.concat(foreignCurrency);
   let yen = rands / 10;
-  //yen = yen.concat(foreignCurrency);
   let pounds = rands / 14;
-  //pounds = pounds.concat(foreignCurrency);
   let emalangeni = rands;
-  //emalangeni = emalangeni.concat(foreignCurrency);
   let message = `${rands}  Rands is equivalent to: `;
   switch (foreignCurrency) {
     case "Naira":

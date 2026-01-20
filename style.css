@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  background-color: beige;
+  position: relative;
+  top: 25vh;
+}
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 1.2em;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+}
+i {
+  color: rgba(0, 0, 0, 0.7);
+}
