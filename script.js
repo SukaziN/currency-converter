@@ -10,17 +10,16 @@ function convertCurrency() {
     " Rupees",
     " Yen",
     " Pounds",
-    " Emalangeni",
+    " Franc",
   ];
 
-  //NOTE: the conversion values below are placeholders and do not reflect the economic market in real life
-  let naira = rands * 2000;
-  let euros = rands / 7;
-  let usDollars = rands / 12;
-  let rupees = rands * 34;
-  let yen = rands / 10;
-  let pounds = rands / 14;
-  let emalangeni = rands;
+  let naira = rands * 86.21; //market value as of 20/01/26
+  let euros = rands / 19.27; //market value as of 20/01/26
+  let usDollars = rands / 16.44; //market value as of 20/01/26
+  let rupees = rands * 5.53; //market value as of 20/01/26
+  let yen = rands * 9.59; //market value as of 20/01/26
+  let pounds = rands / 22; //market value as of 20/01/26 (British pound)
+  let franc = rands / 20.809; //market value as of 20/01/26
   let message = `${rands}  Rands is equivalent to: `;
   switch (foreignCurrency) {
     case "Naira":
@@ -48,10 +47,9 @@ function convertCurrency() {
       //console.log(message.concat(pounds).concat(currency[5]));
       message = message.concat(pounds.toPrecision(3)).concat(currency[5]);
       break;
-    case "Emalangeni":
-    case "Pula":
-      //console.log(message.concat(emalangeni).concat(currency[6]));
-      message = message.concat(emalangeni.toPrecision(3)).concat(currency[6]);
+    case "Franc":
+      //console.log(message.concat(franc).concat(currency[6]));
+      message = message.concat(franc.toPrecision(3)).concat(currency[6]);
       break;
     default:
       alert(
