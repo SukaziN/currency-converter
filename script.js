@@ -11,11 +11,13 @@ function convertCurrency() {
     " Yen",
     " Pounds",
     " Franc",
+    "Zim Dollars",
   ];
 
   let naira = rands * 86.21; //market value as of 20/01/26
   let euros = rands / 19.27; //market value as of 20/01/26
   let usDollars = rands / 16.44; //market value as of 20/01/26
+  let zimDollars = rands * 3906.07; //market value as of 20/01/26
   let rupees = rands * 5.53; //market value as of 20/01/26
   let yen = rands * 9.59; //market value as of 20/01/26
   let pounds = rands / 22; //market value as of 20/01/26 (British pound)
@@ -51,6 +53,8 @@ function convertCurrency() {
       //console.log(message.concat(franc).concat(currency[6]));
       message = message.concat(franc.toPrecision(3)).concat(currency[6]);
       break;
+    case "Zim dollars":
+      message = message.concat(zimDollars.toPrecision(3)).concat(currency[7]);
     default:
       alert(
         "Please enter a valid currency. Note: start your currency with an uppercase character."
