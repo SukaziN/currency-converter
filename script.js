@@ -25,33 +25,33 @@ function convertCurrency() {
   switch (foreignCurrency) {
     case "Naira":
       console.log(message.concat(naira).concat(currency[0]));
-      message = message.concat(naira).concat(currency[0]);
+      message = message.concat(naira.toPrecision(3)).concat(currency[0]);
       break;
     case "Euros":
       console.log(message.concat(euros).concat(currency[1]));
-      message = message.concat(euros).concat(currency[1]);
+      message = message.concat(euros.toPrecision(3)).concat(currency[1]);
       break;
     case "US dollars":
     case "Canadian dollars":
       console.log(message.concat(usDollars).concat(currency[2]));
-      message = message.concat(usDollars).concat(currency[2]);
+      message = message.concat(usDollars.toPrecision(3)).concat(currency[2]);
       break;
     case "Rupees":
       console.log(message.concat(rupees).concat(currency[3]));
-      message = message.concat(rupees).concat(currency[3]);
+      message = message.concat(rupees.toPrecision(3)).concat(currency[3]);
       break;
     case "Yen":
       console.log(message.concat(yen).concat(currency[4]));
-      message = message.concat(yen).concat(currency[4]);
+      message = message.concat(yen.toPrecision(3)).concat(currency[4]);
       break;
     case "Pounds":
       console.log(message.concat(pounds).concat(currency[5]));
-      message = message.concat(pounds).concat(currency[5]);
+      message = message.concat(pounds.toPrecision(3)).concat(currency[5]);
       break;
     case "Emalangeni":
     case "Pula":
       console.log(message.concat(emalangeni).concat(currency[6]));
-      message = message.concat(emalangeni).concat(currency[6]);
+      message = message.concat(emalangeni.toPrecision(3)).concat(currency[6]);
       break;
     default:
       alert(
